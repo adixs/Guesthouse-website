@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="booknow.css" />
+    <title>Rayal Park | Book Now</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            
+            <div class="back-arrow" onclick="goBack()">
+                &#8592; Back
+            </div>
+
+            
+            <h1>Book Your Stay</h1>
+            <form action="#" id="form">
+                <div class="input__group">
+                    <input type="text" id="name" name="name" placeholder=" " />
+                    <label for="name">Full Name</label>
+                    <span class="error__field"></span>
+                </div>
+                <div class="input__group">
+                    <input type="email" id="email" name="email" placeholder=" " />
+                    <label for="email">Email</label>
+                    <span class="error__field"></span>
+                </div>
+                <div class="input__row">
+                    <div class="input__group phone__code">
+                        <select id="countryCode" name="countryCode">
+
+                            <option value="+94">+94 (Sri Lanka)</option>
+                            <option value="+61">+61 (Australia)</option>
+                            <option value="+32">+32 (Belgium)</option>
+                            <option value="+1">+1 (Canada)</option>
+                            <option value="+86">+86 (China)</option>
+                            <option value="+39">+39 (Italy)</option>
+                            <option value="+81">+81 (Japan)</option>
+                            <option value="+31">+31 (Netherlands)</option>
+                            <option value="+64">+64 (New Zealand)</option>
+                            <option value="+7">+7 (Russia)</option>
+                            <option value="+65">+65 (Singapore)</option>
+                            <option value="+82">+82 (South Korea)</option>
+                            <option value="+34">+34 (Spain)</option>
+                            <option value="+268">+268 (Swaziland)</option>
+                            <option value="+46">+46 (Sweden)</option>
+                            <option value="+41">+41 (Switzerland)</option>
+                            <option value="+66">+66 (Thailand)</option>
+                            <option value="+90">+90 (Turkey)</option>
+                            <option value="+380">+380 (Ukraine)</option>
+                            <option value="+971">+971 (United Arab Emirates)</option>
+                            <option value="+44">+44 (United Kingdom)</option>
+                            <option value="+1">+1 (United States)</option>
+                            
+                        </select>
+                        <span class="error__field"></span>
+                    </div>
+                    <div class="input__group phone__number">
+                        <input type="tel" id="phone" name="phone" placeholder=" " />
+                        <label for="phone">Phone Number</label>
+                        <span class="error__field"></span>
+                    </div>
+                </div>
+                <div class="input__row">
+                    <div class="input__group">
+                        <input type="date" id="checkin" name="checkin" placeholder=" " />
+                        <label for="checkin">Check-In Date</label>
+                        <span class="error__field"></span>
+                    </div>
+                    <div class="input__group">
+                        <input type="date" id="checkout" name="checkout" placeholder=" " />
+                        <label for="checkout">Check-Out Date</label>
+                        <span class="error__field"></span>
+                    </div>
+                </div>
+                <div class="input__group">
+                    <input type="number" id="guests" name="guests" min="1" placeholder=" " />
+                    <label for="guests">Number of Guests</label>
+                    <span class="error__field"></span>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+        <div class="image"></div>
+    </div>
+
+    <script src="booknow.js"></script>
+    <script>
+        
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
